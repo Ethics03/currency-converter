@@ -9,8 +9,8 @@ function App() {
 
   
   const [amount,setamount] = useState()
-  const [from,setfrom] = useState('usd')
-  const [to,setto] = useState('inr')
+  const [from,setfrom] = useState('1000sats')
+  const [to,setto] = useState('1000sats')
   const [convertedamount,setconvertedamount] = useState(0)
 
   const currencyinfo = useCurrency(from)
@@ -74,7 +74,7 @@ function App() {
                   </div>
                   <button type = "submit"
                   className = 'w-full bg-green-600 text-white px-2 py-2 rounded-lg'
-                  >Convert</button>
+                  >Convert {from} to {to}</button>
                 </form>
           </div>
         </div>
